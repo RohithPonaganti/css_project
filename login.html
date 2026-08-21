@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+           body{
+              display:flex;
+              justify-content:center;
+              align-items:center;
+                  min-height:100vh;
+                  margin:0;
+                  padding:20px;
+                  box-sizing:border-box;
+           }
+              .form{
+                  width:100%;
+                  max-width:520px;
+              }
+           form input{
+              width:100%;
+              height:45px;
+                  box-sizing:border-box;
+                  font-size:16px;
+           }
+           button{
+            background-color:lightblue;
+            border-radius:15px;
+            width:70%;
+            height:40px;
+            font-size:20px;
+           }
+           form{
+             font-size:20px;
+                border-radius:50px;
+
+           }
+           a{
+            text-decoration: blue;
+            color:blue;
+            font-size:30px;
+            text-align:right;
+           }
+           fieldset{
+            border:2px solid black;
+                padding:clamp(20px, 6vw, 50px);
+           }
+              @media (max-width:600px){
+                  body{
+                      align-items:flex-start;
+                      padding-top:40px;
+                  }
+                  form button{
+                      width:100%;
+                      font-size:16px;
+                  }
+                  form a{
+                      display:block;
+                      margin-top:12px;
+                      font-size:16px;
+                  }
+              }
+          
+    </style>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="login-page">
+    <div class="form">
+    <form>
+        <fieldset>
+            <legend>Enter Your Details:</legend>
+
+            <label>Email:</label>
+            <br>
+            <input type="email" required>
+
+            <br><br>
+
+            <label>Password:</label>
+            <br>
+            <input type="password" required>
+
+            <br><br>
+
+            <button>Login</button>
+            <a href="">register</a>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
